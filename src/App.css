@@ -1,4 +1,152 @@
+/*Imports*/
+@import url("https://fonts.googleapis.com/css2?family=Heebo:wght@300;400;500;600;700&display=swap");
+
+/*General Rules*/
 * {
   margin: 0;
   padding: 0;
+  border: 0px solid red;
+  font-family: "Heebo";
+}
+html {
+  background-color: #fbfbfb;
+}
+
+/*Header Rules*/
+#header {
+  background-color: #ffffff;
+  padding: 0.75rem 0;
+  text-align: center;
+  box-sizing: 1rem 1rem 1rem black;
+  border-bottom: 0.3rem solid rgb(236, 236, 241);
+}
+#header-container {
+  margin: 0 auto;
+  width: 13rem;
+
+  display: grid;
+  grid-template-columns: auto auto;
+  justify-items: center;
+  align-items: center;
+}
+#title {
+  font-size: 2.5rem;
+}
+#logo {
+  max-width: 4rem;
+}
+
+/*Search Bar*/
+#searchbar {
+  width: 100vw;
+  height: 3rem;
+  display: grid;
+  grid-template-columns: auto 5rem;
+  box-shadow: 0 0.5rem 1.5rem 0 rgb(195, 195, 202);
+}
+#searchbar input {
+  font-size: 1.2rem;
+  padding-left: 1rem;
+  width: 100%;
+  height: 100%;
+  outline: none;
+}
+#searchbar button {
+  font-size: 1.2rem;
+  width: 100%;
+  height: 100%;
+  background-color: rgb(236, 236, 241);
+  border-left: 0.3rem solid rgb(236, 236, 241);
+}
+#searchbar button:hover {
+  cursor: pointer;
+  background-color: rgb(246, 246, 246);
+}
+#result-label {
+  font-size: 2.5rem;
+  margin-top: 3.5rem;
+  text-decoration: underline;
+  text-align: center;
+}
+
+/*Content*/
+.post {
+  margin: 3.5rem auto;
+  display: grid;
+  width: 45rem;
+  box-shadow: 0 1rem 1.5rem 1rem rgb(219, 219, 223);
+  border-radius: 1rem;
+
+  display: grid;
+  grid-template-columns: 5rem auto;
+  grid-template-rows: auto auto auto;
+  align-items: center;
+}
+.post-title {
+  grid-column: 2;
+  grid-row: 1;
+  font-size: 1.8rem;
+  padding: 1rem 0;
+  width: 95%;
+}
+.post-votes {
+  margin-top: 1rem;
+  grid-column: 1;
+  grid-row: 1;
+  text-align: center;
+}
+.vote {
+  width: 2rem;
+}
+.vote:hover {
+  cursor: pointer;
+}
+.post-score {
+  font-size: 1.25rem;
+}
+
+.post-content {
+  grid-column: 2;
+  grid-row: 2;
+  width: 95%;
+  border-radius: 2rem;
+  margin-bottom: 1rem;
+}
+
+.post-bottom {
+  border-top: 0.3rem solid rgb(236, 236, 241);
+  width: 95%;
+  grid-column: 2;
+  grid-row: 3;
+  display: grid;
+  grid-template-columns: auto auto auto;
+  font-size: 1.25rem;
+  padding: 1.25rem 0;
+}
+.post-author {
+  grid-column: 1;
+}
+.post-author-link {
+  color: rgb(94, 96, 226);
+}
+.post-author-link:hover {
+  cursor: pointer;
+}
+.post-uploadDate {
+  grid-column: 2;
+  text-align: center;
+  margin: 0 1rem;
+}
+.post-comments {
+  grid-column: 3;
+  display: grid;
+  grid-template-columns: 1fr auto;
+  justify-items: end;
+}
+.post-comments:hover {
+  cursor: pointer;
+}
+.post-comments img {
+  margin-right: 0.5rem;
+  width: 2rem;
 }
